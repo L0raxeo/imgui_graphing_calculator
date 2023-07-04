@@ -26,7 +26,6 @@ public class AppWindow
 
 
     public static long glfwWindow;
-    private String glslVersion = null;
     private ImGuiLayer imguiLayer;
     private final ImGuiImplGlfw imguiGlfw = new ImGuiImplGlfw();
     private final ImGuiImplGl3 imGuiGl3 = new ImGuiImplGl3();
@@ -64,7 +63,7 @@ public class AppWindow
         if (!glfwInit())
             throw new IllegalStateException("Unable to initialize GLFW");
 
-        glslVersion = "#version 330";
+        String glslVersion = "#version 330";
 
         glfwDefaultWindowHints();
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);

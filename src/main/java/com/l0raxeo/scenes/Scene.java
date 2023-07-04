@@ -45,8 +45,8 @@ public class Scene
             float dragX = MouseListener.getDragX();
             float dragY = MouseListener.getDragY();
 
-            camera.position.x += (dragX * camera.getZoom()) /*TODO speed constant?*/;
-            camera.position.y += (-dragY * camera.getZoom()) /*TODO speed constant?*/;
+            camera.position.x += (dragX * camera.getZoom());
+            camera.position.y += (-dragY * camera.getZoom());
         }
     }
 
